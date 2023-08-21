@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { Beau_Rivage } from "next/font/google";
-import { Handjet } from "next/font/google";
+import { Beau_Rivage, Handjet } from "next/font/google";
 
 const handjet = Handjet({ subsets: ["latin"] });
 

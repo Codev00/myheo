@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 
-const page = () => {
-   const [show, setShow] = useState(false);
+const Bustop = () => {
+   const [show, setShow] = React.useState(false);
    const ClickMe = () => {
       setShow(!show);
    };
@@ -183,7 +183,7 @@ const page = () => {
                position: "absolute",
             }}
          >
-            TÔI YÊU EM
+            I LOVE YOU
          </h1>
          <h1
             style={{
@@ -196,11 +196,11 @@ const page = () => {
             }}
             onClick={ClickMe}
          >
-            A.X.Pu-Skin
+            Tôi Yêu Em
          </h1>
          <div
             className={`hidden mt-4 transition-all ease-in delay-700  ${
-               show == true && "!block"
+               show && "!block"
             }`}
          >
             <h2 className="font-bold text-2xl text-pink-700">Tôi Yêu Em</h2>
@@ -325,4 +325,4 @@ const page = () => {
    );
 };
 
-export default page;
+export default Bustop;
